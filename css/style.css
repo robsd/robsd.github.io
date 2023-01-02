@@ -1,5 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+:root {
+	--primary: #4dac6a;
+	--secondary: #101820;
+	--hover: #fff;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--primary);
+	color: var(--secondary);
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 3.75rem;
+}
+
+p {
+	margin: 3rem;
+	font-size: 1.5rem;
+}
+
+a {
+	color: var(--secondary);
+	font-size: 1.5rem;
+}
+
+a:hover {
+	color: var(--hover);
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--secondary);
+		color: var(--primary);
+	}
+
+	a {
+		color: var(--primary);
+	}
+}
+
 @media (min-width: 576px) {
 	html {
 		font-size: 14px;
@@ -22,34 +69,4 @@
 	html {
 		font-size: 20px;
 	}
-}
-
-body {
-	display: flex;
-	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	background: #4DAC6A;
-	color: #101820;
-	font-family: "Montserrat", Arial, Helvetica, sans-serif;
-}
-
-h1 {
-	font-weight: 600;
-	font-size: 3.75rem;
-}
-
-p {
-	margin: 3rem;
-	font-size: 1.5rem;
-}
-
-a {
-	color: #101820;
-	font-size: 1.5rem;
-}
-
-a:hover {
-	color: white;
 }
